@@ -43,6 +43,9 @@ Es necesario eliminar las siguientes líneas, (```kali:
 
 ![](Images/img2.png)
 
+Para verificar buscamos por el puerto 8080
+
+![](Images/img5.png)
 
 ## Entorno de pruebas
 
