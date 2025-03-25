@@ -41,6 +41,7 @@ Es necesario eliminar las siguientes líneas, (```kali:
   
 3. Levantar el escenario multicontedor con `docker-compose up -d`
 
+![](Images/img2.png)
 
 
 ## Entorno de pruebas
