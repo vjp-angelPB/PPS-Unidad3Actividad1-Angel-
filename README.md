@@ -43,10 +43,70 @@ Es necesario eliminar las siguientes líneas, (```kali:
 
 ![](Images/img2.png)
 
-Para verificar buscamos por el puerto 8080
+
+En este punto ya tenemos las máquinas creadas, a continuación, vamos a verificar las máquinas vulnerables que hemos creado:
+
+- DVWA
+Para acceder a esta máquina buscamos __http://localhost:8001__, es posible que tarde en crear la base de datos o que de error en la BBDD.
+
+![](Images/img6.png)
+
+Accedemos con usuario Admin y sin contraseña
+
+Al igual que en bWAPP que veremos a continuación, el primer paso será crear la Base de Datos.
+
+![](Images/img7.png)
+
+A continuación, con el usuario Admin y la contraseña password podemos realizar los retos que queramos.
+
+![](Images/img8.png)
+
+---
+
+- bWAPP
+Para acceder a esta máquina buscamos __http://localhost:8002__, aunque la primera vez que accedamos mostrará un error ya que no tiene creada la BBDD.
+
+![](Images/img9.png)
+
+
+Debemos acceder a crear la BBDD: __http://localhost:8002/install.php__
+
+![](Images/img10.png)
+
+Y ya podremos acceder pulsando en login o creando un nuevo usuario. 
+Existen credenciales de acceso por defecto, son usuario: bee, contraseña: bug
+A continuación podemos seleccionar el nivel de seguridad que queremos que tenga la máquina.
+
+![](Images/img11.png)
+
+Tras haber accedido, podemos realizar diferentes entrenamientos de explotación de vulnerabilidades.
+
+![](Images/img12.png)
+
+
+- Multillidae ii
+
+Para entrar a esta máquina accedemos a través del puerto 80 0 8080, __http://localhost:80__,o __http://localhost:8080__.
+
+Al igual que en los casos anteriores, el primer paso será crear la Base de Datos.
 
 ![](Images/img5.png)
 
+En este caso no necesitamos usuario y contraseña para acceder.
+
+En multillidae tenemos además del servicio de BBDD otros servicios creados:
+
+* Servicio PhpAdmin para acceder a las BBDD.
+  Accedemos desde http://localhost:81. 
+
+![](Images/img3.png)
+
+* Servicio PhpLdapAdmin para acceder al servicio de directorio LDAP.
+  Accedemos desde http://localhost:82. 
+
+![](Images/img4.png)
+
+    
 ## Entorno de pruebas
 
 Para la realización de las prácticas, vamos a crear servidores y archivos con vulnerabilidades presentes para posteriormente corregirlas.
