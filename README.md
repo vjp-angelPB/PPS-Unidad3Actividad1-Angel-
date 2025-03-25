@@ -129,12 +129,10 @@ Yo he utilizado la primera que me he encontrado:[https://github.com/sprintcube/d
 git clone https://github.com/sprintcube/docker-compose-lamp.git
 cd docker-compose-lamp/
 cp sample.env .env
-// modify sample.env as needed
-docker compose up -d
-// visit localhost
+docker-compose up -d
 ```
 
-A continuación, ejecutamos `docker compose up -d`.
+![](Images/img13.png)
 
 
 
