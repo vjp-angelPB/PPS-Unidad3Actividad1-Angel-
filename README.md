@@ -43,7 +43,19 @@ En esta ocasión vamos a utilizar la segunda opción. Crearemos un escenario mul
 Yo he utilizado la primera que me he encontrado:[https://github.com/sprintcube/docker-compose-lamp.git](https://github.com/sprintcube/docker-compose-lamp.git)
 
 
-> Si vemos el repositoio de github.com, el usuario nos dice las operaciones que tenemos que hacer para replicar el escenario:
+### Instalación
+> En el repositorio de github.com, el usuario __sprintcube__ nos indica las operaciones que tenemos que hacer para replicar el escenario:
+
+```shell
+git clone https://github.com/sprintcube/docker-compose-lamp.git
+cd docker-compose-lamp/
+cp sample.env .env
+// modify sample.env as needed
+docker compose up -d
+// visit localhost
+```
+
+A continuación, ejecutamos `docker compose up -d`.
 
 
 
