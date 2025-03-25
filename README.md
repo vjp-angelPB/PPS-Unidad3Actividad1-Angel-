@@ -26,8 +26,20 @@ Para ello tan sólo tenemos que realizar los siguientes pasos:
 2. Colocar dentro de ella el archivo [docker-compose.yml](./entornoMaquinasInseguras/docker-compose.yml) que tienes en la carpeta entornoMaquinasInseguras de este repositorio
 
 ![](Images/img1.png)
+
+Es necesario eliminar las siguientes líneas, (```kali:
+    image: jmmedinac03/kali_pps
+    hostname: kali
+    cap_add:
+      - NET_ADMIN
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./kali-volume:/root/kali
+    networks:
+      - labpps-net```)
   
-4. Levantar el escenario multicontedor con `docker-compose up -d`
+3. Levantar el escenario multicontedor con `docker-compose up -d`
 
 
 
