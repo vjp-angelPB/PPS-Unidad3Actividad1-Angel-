@@ -128,11 +128,26 @@ Yo he utilizado la primera que me he encontrado:[https://github.com/sprintcube/d
 ```shell
 git clone https://github.com/sprintcube/docker-compose-lamp.git
 cd docker-compose-lamp/
-cp sample.env .env
+cp sample.env fichero_config.env
+```
+
+Modificamos el fichero_config.env y cambiamos los valores por defecto como puertos, usuarios, contraseñas, nombre base de datos:
+
+![](Images/img15.png)
+
+![](Images/img14.png)
+
+
+```
 docker-compose up -d
 ```
 
-![](Images/img13.png)
+![](Images/img16.png)
+
+
+
+
+
 
 
 
