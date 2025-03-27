@@ -135,6 +135,8 @@ Modificamos el fichero_config.env y cambiamos los valores por defecto como puert
 
 ![](Images/img15.png)
 
+![](Images/img17.png)
+
 ![](Images/img14.png)
 
 
